@@ -9,3 +9,20 @@ generated/
 # Contains configuration values used during development time.
 # See https://ballerina.io/learn/provide-values-to-configurable-variables/ for more details.
 Config.toml
+
+# Ignore WSO2 database / runtime data
+wso2-data/
+
+# Ignore Ballerina target build folder & temporary files
+target/
+.bal_run/
+
+# Ignore sensitive keys and config
+Config.toml
+.env
+*.key
+*.pem
+
+# Ignore IDE / System files
+.vscode/
+.DS_Store

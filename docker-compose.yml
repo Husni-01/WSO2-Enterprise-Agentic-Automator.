@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  api-gateway:
+    image: wso2/wso2am:4.7.0
+    container_name: wso2-api-manager
+    ports:
+      - "8280:8280"   # HTTP API Traffic
+      - "8243:8243"   # HTTPS API Traffic
+      - "9443:9443"   # Admin/Publisher Console (Control Plane)
+    environment:
+      - NODE_IP=127.0.0.1
+    volumes:
+      - wso2-db-data:/home/wso2carbon/wso2am-4.7.0/repository/database
+
+volumes:
+  wso2-db-data: {}  
