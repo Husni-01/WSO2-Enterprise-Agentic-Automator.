@@ -35,7 +35,7 @@ flowchart LR
 
 ---
 
-## 🚀 Core Functionalities
+## Core Functionalities
 
 ### 1. Enterprise-Grade API Security & Governance (WSO2 API Manager)
 * **OAuth2 Authentication**: All client interactions require Bearer tokens issued via the OAuth2 **Client Credentials** grant type.
